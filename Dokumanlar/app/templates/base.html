@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        {% if baslik %}
+        <title>{{baslik}}</title>
+        {% else %}
+        <title>Başlık Yok</title>
+        {% endif %}
+    </head>
+    <body>
+        <h1> Merhaba  {{kullanici.kullaniciAdi}}
+        </h1>
+        {% block sayfaici %}
+        
+        {% endblock sayfaici %}
+    </body>
+    </html>

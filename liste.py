@@ -8,4 +8,4 @@ for item in liste:
         os.mkdir(os.path.join("Egzersizler",item,"app"))
     if not os.path.exists(os.path.join("Egzersizler",item,"app",klasorismi)):
         os.mkdir(os.path.join("Egzersizler",item,"app",klasorismi))
-    open(os.path.join("Egzersizler",item,"app",klasorismi,"index.html"),"a+")
+    open(os.path.join("Egzersizler",item,"app",klasorismi,"base.html"),"a+")

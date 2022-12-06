@@ -1,9 +1,10 @@
-<html>
-    <head>
-        <title>Ana Sayfa {{baslik}}</title>
-    </head>
-    <body>
-    <h1> Merhaba  {{kullanici.kullaniciAdi}}
-    </h1>
-    </body>
-    </html>
+{% extends 'base.html' %}
+
+{% block sayfaici %}
+        {% for veri in veriler %}
+        <div>
+            <h4>{{veri.adi}}</h4>
+            <h3>{{veri.soyadi}}</h3>
+        </div>
+        {% endfor %}
+{% endblock sayfaici %}
