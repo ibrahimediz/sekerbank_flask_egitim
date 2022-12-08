@@ -1,3 +1,3 @@
 FLASK_APP=run.py
 FLASK_DEBUG=True
-GIZIL_ANAHTAR=Şekerbank
+SECRET_KEY=Şekerbank

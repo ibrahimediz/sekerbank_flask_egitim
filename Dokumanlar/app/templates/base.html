@@ -8,8 +8,20 @@
         {% endif %}
     </head>
     <body>
-        <h1> Merhaba  {{kullanici.kullaniciAdi}}
-        </h1>
+        <div> Şekerbank Flask:
+            <a href="/index">Ana Sayfa</a>
+            <a href="/giris">Giriş</a>
+        </div>
+        <br>
+        {% with mesajlar = get_flashed_messages() %}
+        {% if mesajlar %}
+        <ul>
+            {% for mesaj in mesajlar %}
+            <li>{{mesaj}}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}        
         {% block sayfaici %}
         
         {% endblock sayfaici %}

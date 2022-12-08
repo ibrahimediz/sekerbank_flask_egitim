@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block sayfaici %}
+<h1>Giriş </h1>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{form.kullaniciAdi.label}}<br>
+        {{form.kullaniciAdi(size=32)}}<br>
+    </p>
+    <p>
+        {{form.sifre.label}}<br>
+        {{form.sifre(size=32)}}<br>
+    </p>
+    <p>
+        {{form.beni_hatirla()}} {{form.beni_hatirla.label}}<br>
+        {{form.onay()}}
+    </p>
+{% endblock sayfaici %}
